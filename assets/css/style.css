@@ -280,6 +280,14 @@ html {
   width: 30px;
   display: inline-block;
 }
+.contact-info a {
+  color: rgb(0, 0, 238);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.contact-info a:hover {
+  opacity: 1;
+}
 .contact-form {
   font-size: 15px;
 }
@@ -418,9 +426,42 @@ html {
     opacity: 1;
   }
 }
+/* responsive
+
+
+
+*/
 /* pc */
 @media (min-width: 1024px) {
 }
+@media (max-width: 1023px) {
+  .nav .subnav a {
+    padding: 5px 12px;
+  }
+  .btn {
+    padding: 16px 19px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .contact-form .form-control {
+    padding: 15px;
+  }
+  .contact-info {
+    line-height: 2;
+  }
+
+  .social-list {
+    font-size: 48px;
+  }
+  .social-list a {
+    margin: 0 8px;
+  }
+  .coppyright a {
+    padding: 8px 0;
+    display: in;
+  }
+}
+
 /* tablet */
 @media (min-width: 740) and (max-width: 1023px) {
 }
@@ -485,5 +526,8 @@ html {
   }
   .contact-form {
     margin-top: 16px;
+  }
+  .social-list {
+    font-size: 28px;
   }
 }
